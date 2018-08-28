@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/build
+/captures
+*.DS_Store
+app/build/*
+sign_gen.py
+bin/
+gen/
+.classpath
+.project
+.settings/
+project.proerpies

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="5sp"
+    tools:context="ccoderad.bnds.shiyiquanevent.activities.ClubSquareActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30sp">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/club_square_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/club_square_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16sp"
+        android:src="@drawable/ic_back_to_top"
+        app:fabSize="normal"
+        app:layout_behavior="ccoderad.bnds.shiyiquanevent.behaviors.ScrollFabBehavior" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/club_square_categories"
+            android:textSize="15sp" />
+
+        <!--<Spinner-->
+            <!--android:id="@+id/club_square_category"-->
+            <!--android:layout_width="match_parent"-->
+
+            <!--android:layout_height="wrap_content" />-->
+            <!--&lt;!&ndash;android:entries="@array/club_square_category_names">&ndash;&gt;-->
+
+        <!--</Spinner>-->
+        <Spinner
+            android:id="@+id/club_square_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/club_square_category">
+
+        </Spinner>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/club_square_no_info_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无信息"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+</android.support.design.widget.CoordinatorLayout>

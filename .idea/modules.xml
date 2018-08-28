@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidSweetSheet/AndroidSweetSheet.iml" filepath="$PROJECT_DIR$/AndroidSweetSheet/AndroidSweetSheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FloatingActionMenu/FloatingActionMenu.iml" filepath="$PROJECT_DIR$/FloatingActionMenu/FloatingActionMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShiyiquanEvent-master.iml" filepath="$PROJECT_DIR$/ShiyiquanEvent-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-3.2.2-SNAPSHOT/core-3.2.2-SNAPSHOT.iml" filepath="$PROJECT_DIR$/core-3.2.2-SNAPSHOT/core-3.2.2-SNAPSHOT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/disklrucache-2.0.2/disklrucache-2.0.2.iml" filepath="$PROJECT_DIR$/disklrucache-2.0.2/disklrucache-2.0.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fresco/fresco.iml" filepath="$PROJECT_DIR$/fresco/fresco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/universal-image-loader-1.9.5/universal-image-loader-1.9.5.iml" filepath="$PROJECT_DIR$/universal-image-loader-1.9.5/universal-image-loader-1.9.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxing-android-core-3.2.1/zxing-android-core-3.2.1.iml" filepath="$PROJECT_DIR$/zxing-android-core-3.2.1/zxing-android-core-3.2.1.iml" />
+    </modules>
+  </component>
+</project>

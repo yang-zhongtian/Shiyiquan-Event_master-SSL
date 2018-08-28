@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "ccoderad.bnds.shiyiquanevent"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':disklrucache-2.0.2')
+    compile project(':universal-image-loader-1.9.5')
+    compile project(':core-3.2.2-SNAPSHOT')
+    compile project(':zxing-android-core-3.2.1')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.github.zzz40500:AndroidSweetSheet:1.1.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.novaapps:FloatingActionMenu:1.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.3@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.0@aar'
+    compile 'cn.bingoogolapple:bga-photopicker:1.1.2@aar'
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha2'
+    testCompile 'junit:junit:4.12'
+}

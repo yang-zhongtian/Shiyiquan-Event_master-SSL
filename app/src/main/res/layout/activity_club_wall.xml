@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sidebar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_club_wall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ccoderad.bnds.shiyiquanevent.activities.ClubWallActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/club_wall_list_searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5sp"
+            android:paddingLeft="5sp"
+            android:queryHint="搜索社团">
+
+        </android.support.v7.widget.SearchView>
+
+        <TextView
+            android:id="@+id/club_wall_loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:text="加载中..."/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/club_wall_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/club_wall_list_searchview">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.gjiazhe.wavesidebar.WaveSideBar
+            android:id="@+id/club_wall_sidebar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"
+            sidebar:sidebar_position="right" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/club_wall_back_to_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16sp"
+        android:clickable="true"
+        app:layout_behavior="ccoderad.bnds.shiyiquanevent.behaviors.ScrollDefaultBehavior"
+        sidebar:fabSize="normal"
+        sidebar:srcCompat="@drawable/ic_back_to_top" />
+
+
+</android.support.design.widget.CoordinatorLayout>

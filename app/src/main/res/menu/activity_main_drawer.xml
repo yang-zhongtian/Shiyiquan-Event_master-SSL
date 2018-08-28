@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/go_to_browser"
+            android:icon="@drawable/ic_web_light_blue_300_18dp"
+            android:title="@string/menu_goto_shiyiquan" />
+        <item
+            android:id="@+id/go_to_faved_events"
+            android:icon="@drawable/ic_favorite_indicator"
+            android:title="@string/menu_my_fav" />
+        <item
+            android:id="@+id/go_to_event_square"
+            android:icon="@drawable/ic_event_datetime"
+            android:title="@string/go_to_event_square"
+            />
+        <item
+            android:id="@+id/go_to_scan"
+            android:icon="@drawable/ic_scan"
+            android:title="@string/menu_scanner" />
+        <item
+            android:id="@+id/go_to_square"
+            android:icon="@drawable/ic_go_to_square"
+            android:title="@string/menu_clubsquare" />
+        <item
+            android:id="@+id/go_to_wall"
+            android:icon="@drawable/ic_list_card_18dp"
+            android:title="@string/menu_goto_wall" />
+
+        <item
+            android:id="@+id/go_to_moment"
+            android:icon="@drawable/ic_cloud"
+            android:title="@string/menu_moments" />
+        <item
+            android:id="@+id/go_to_auth_list"
+            android:icon="@drawable/ic_check"
+            android:title="@string/menu_to_go_auth" />
+
+        <item
+            android:id="@+id/go_to_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/go_to_about_me"
+            android:icon="@drawable/ic_me"
+            android:title="@string/menu_aboutme" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>
