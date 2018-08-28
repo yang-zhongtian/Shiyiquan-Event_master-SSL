@@ -6,4 +6,4 @@
 
 #### [View Full Commits for this project](https://coding.net/u/AD1024/p/ShiyiquanEvent/git/commits/master/)
 
->Made By Richard_yang
+>Made By Richard_yang and AD1024
